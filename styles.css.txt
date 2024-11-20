@@ -1,0 +1,38 @@
+body {
+    font-family: Cambria, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #0000CD;
+}
+
+body.site1 {
+    background-image: url('garu_pucca1.jpg');
+    background-size: cover;
+}
+
+body.site2 {
+    background-image: url('garu_pucca2.jpg');
+    background-size: cover;
+}
+
+.coracoes-container {
+    margin-top: 20px;
+}
+
+.coracoes {
+    font-size: 24px;
+    color: blue;
+}
+
+.coracoes.final {
+    color: orange;
+}
+
+.escondido {
+    font-size: 10px;
+    color: #333;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Lua</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="site2">
+    <h1>Eu te amo, meu amor!</h1>
+    <p>Aqui estão alguns momentos especiais nossos 💖</p>
+
+    <div id="mensagem">
+        <button onclick="mostrarCoracao()">Clique aqui</button>
+    </div>
+
+    <div id="coracao" style="display: none;">❤️</div>
+    <p id="fraseCoracao" style="display: none;">
+        Eu te amo muito minha lua, feliz aniversário de 270 dias, 38 semanas e 8 meses (atrasado? desculpa :( )
+    </p>
+
+    <p class="escondido">Manda foto do pepeto?🥺</p>
+
+    <script src="script2.js"></script>
+</body>
+</html>

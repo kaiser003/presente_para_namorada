@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos Amorosos </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="site1">
+    <h1>Bem-vinda ao Jogo meu amor aqui eu não resolvi pega leve, pôs sei a sua capacidade de desvenda enigmas, então boa sorte !</h1>
+    <p>Cada fase tem um enigma. Resolva para ganhar um coração!(pode pedir dicas tbm para mim)</p>
+
+    <div class="coracoes-container">
+        <span id="coracao1" class="coracoes">💙</span>
+        <span id="coracao2" class="coracoes">💙</span>
+        <span id="coracao3" class="coracoes">💙</span>
+    </div>
+
+    <div id="fase1" class="fase-container">
+        <h2>Fase 1: Cifra de César</h2>
+        <p>"Dhny é n zvaun pbzvqn snibevgn?"</p>
+        <input type="text" id="resposta1" placeholder="Sua resposta">
+        <button onclick="verificarResposta(1)">Verificar</button>
+    </div>
+
+    <div id="fase2" class="fase-container" style="display: none;">
+        <h2>Fase 2: Código de Substituição Simples</h2>
+        <p>"A FTE ET WAYHA VE DINES CA RET HERMA LOUSE?"</p>
+        <input type="text" id="resposta2" placeholder="Sua resposta">
+        <button onclick="verificarResposta(2)">Verificar</button>
+    </div>
+
+    <div id="fase3" class="fase-container" style="display: none;">
+        <h2>Fase 3: Código Binário</h2>
+        <p>"01010001 01110101 01100001 01101100 00100000 11101001 00100000 01100001 00100000 01101101 01101001 01101110 01101000 01100001 00100000 01100011 01101111 01110010 00100000 01100110 01100001 01110110 01101111 01110010 01101001 01110100 01100001 00111111"</p>
+        <input type="text" id="resposta3" placeholder="Sua resposta">
+        <button onclick="verificarResposta(3)">Verificar</button>
+    </div>
+
+    <button onclick="pularFase()">Pular Fase</button>
+    <audio id="vitoriaAudio" src="vitoria.mp3"></audio>
+
+    <button onclick="window.location.href='site2.html'">Ir para o Site 2</button>
+
+    <script src="script1.js"></script>
+</body>
+</html>

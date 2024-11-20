@@ -1,0 +1,4 @@
+function mostrarCoracao() {
+    document.getElementById("coracao").style.display = "block";
+    document.getElementById("fraseCoracao").style.display = "block";
+}

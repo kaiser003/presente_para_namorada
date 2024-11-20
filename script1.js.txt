@@ -1,0 +1,37 @@
+let faseAtual = 1;
+let coracoes = 3;
+
+function verificarResposta(fase) {
+    const respostas = ["Empadão", "Jogar Videogame", "Laranja"];
+    const respostaUsuario = document.getElementById(`resposta${fase}`).value.trim();
+
+    if (respostaUsuario === respostas[fase - 1]) {
+        document.getElementById(`coracao${fase}`).style.color = fase === 3 ? 'orange' : 'blue';
+        avancarFase();
+    } else {
+        coracoes--;
+        if (coracoes === 0) {
+            setTimeout(() => alert("Aguarde 5 segundos ou clique no link para recuperar nosso amor!"), 5000);
+            window.open('https://youtu.be/0JkSpPZJDkE');
+            coracoes = 3;
+        } else {
+            alert("Resposta errada! está difícil é? kkkkk.");
+        }
+    }
+}
+
+function avancarFase() {
+    document.getElementById(`fase${faseAtual}`).style.display = "none";
+    faseAtual++;
+    const proximaFase = document.getElementById(`fase${faseAtual}`);
+    if (proximaFase) {
+        proximaFase.style.display = "block";
+    } else {
+        document.getElementById("vitoriaAudio").play();
+        alert("Parabéns, meu amor! Você ganhou meu coração laranja! Vamos comemora :D");
+    }
+}
+
+function pularFase() {
+    avancarFase();
+}
